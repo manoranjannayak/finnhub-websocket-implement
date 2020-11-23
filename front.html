@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>WebSocket Stock</title>
+        <style>
+        body {background-image: url('YtwHJA.jpg')}
+        .main{
+            padding-top: 95px;
+            
+        }
+        table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 55px;
+}
+h2{
+    text-align: center;
+    margin-top: 64px;
+    color: antiquewhite;
+}
+p{
+    margin-left: 131px;
+    color: lightgrey;
+}
+span{
+    color:red
+}
+    </style>
+    </head>
+    <body>
+        
+<h2>WebSocket Sample for Stock Data</h2>
+<p><span>Note</span>: I used finnhub's websocket method to get the real time data US market data provided by IEX.</p>
+<p>In finnhub free version 1 API key can only open 1 connection at a time.</p>
+<div class="main">
+<table>
+  
+    <tr>
+        <td>Symbol</td>
+        <td id="symbol"></td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td id="lastPrice"></td>
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td id="unix"></td>
+    </tr>
+    <tr>
+        <td>Volume</td>
+        <td id="volume"></td>
+    </tr>
+  
+</table>
+</div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
